@@ -2,6 +2,7 @@
 
 #include<iostream>
 #include<climits>
+#include<string>
 
 
 using namespace std;
@@ -35,6 +36,24 @@ int main()
 	// Change String Characters
 	mystring[0] = 'k';
 	cout<<mystring<<'\n';
+	
+	//backslash (\) escape character turns special characters into string characters
+	
+	string quote=" We are the \"Little Masters\" from the west ";
+	cout<<quote<<'\n';
+	
+	//strinng user Input
+	string firstname;
+	cout<<"Enter your first name : ";
+	cin >>firstname;
+	
+	cout<<"Hi "<<firstname;
+	
+	//Note : - Omitting Namespace -For string and cout objects using namespace std line can be replaced by std::
+	// std:: string name="Chithra";
+	//std:: cout<<name;
+	
+	
 	
 	return 0;
 }
